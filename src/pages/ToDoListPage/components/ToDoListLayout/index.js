@@ -38,28 +38,26 @@ const ToDoListLayout = ({
               </IconButton>
             </form>
           </Box>
-          <Box className={classes.tasksWrapper}>
-            <Box className={classes.taskArea}>
-              {taskList.map((task, index) => {
-                return task.isEditMode ? (
-                  <EditableToDo
-                    key={task.id}
-                    id={task.id}
-                    initialText={task.text}
-                    handleSave={handleEditSave}
-                    // handleUndo={handleDiscardChanges}
-                  />
-                ) : (
-                  <TodoItem
-                    handleEdit={() => handleEditModeOn(task.id)}
-                    handleDelete={() => handleTaskRemove(task.id)}
-                    key={task.id}
-                    text={task.text}
-                    orderNumber={index + 1}
-                  />
-                );
-              })}
-            </Box>
+          <Box>
+            {taskList.map((task, index) => {
+              return task.isEditMode ? (
+                <EditableToDo
+                  key={task.id}
+                  id={task.id}
+                  initialText={task.text}
+                  handleSave={handleEditSave}
+                  // handleUndo={handleDiscardChanges}
+                />
+              ) : (
+                <TodoItem
+                  handleEdit={() => handleEditModeOn(task.id)}
+                  handleDelete={() => handleTaskRemove(task.id)}
+                  key={task.id}
+                  text={task.text}
+                  orderNumber={index + 1}
+                />
+              );
+            })}
           </Box>
         </Box>
       </Container>

@@ -2,7 +2,9 @@ const styles = () => ({
   wrapper: {
     display: "flex",
     alignItems: "center",
+    flexWrap: "wrap",
     marginBottom: "10px",
+    justifyContent: "center",
   },
 
   taskWrapper: {
@@ -12,7 +14,8 @@ const styles = () => ({
     minHeight: "50px",
     padding: "5px",
     borderRadius: "5px",
-    minWidth: "700px",
+    maxWidth: "700px",
+    width: "100%",
   },
 });
 

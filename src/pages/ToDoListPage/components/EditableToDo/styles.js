@@ -2,11 +2,14 @@ const styles = () => ({
   wrapper: {
     display: "flex",
     alignItems: "center",
+    flexWrap: "wrap",
+    justifyContent: "center",
     marginBottom: "10px",
   },
 
   input: {
-    minWidth: "700px",
+    maxWidth: "700px",
+    width: "100%",
     minHeight: "50px",
     borderRadius: "5px",
     border: "0",

@@ -14,20 +14,13 @@ const styles = () => ({
   },
 
   input: {
-    minWidth: "400px",
+    maxWidth: "400px",
+    width: "100%",
     minHeight: "50px",
     borderRadius: "5px",
     border: "0",
     backgroundColor: "#DEB887",
     padding: "10px",
-  },
-
-  tasksWrapper: {
-    textAlign: "center",
-  },
-
-  taskArea: {
-    display: "inline-block",
   },
 });
 

@@ -11,9 +11,7 @@ import styles from "./styles";
 const TodoItem = ({ classes, orderNumber, text, handleEdit, handleDelete }) => {
   return (
     <Box className={classes.wrapper}>
-      <Box className={classes.taskWrapper}>
-        <Box>{`${orderNumber}. ${text}`}</Box>
-      </Box>
+      <Box className={classes.taskWrapper}>{`${orderNumber}. ${text}`}</Box>
       <Box>
         <IconButton color="success" onClick={handleEdit}>
           <EditIcon />
